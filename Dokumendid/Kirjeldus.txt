@@ -1,0 +1,9 @@
+Äppi peamisesse lehekülge saab kirjutada lähtekoha, sihtkoha ja küüpäeva. Vajutades "Otsi" peale viiakse kasutaja Elroni rongiaegade peale. Sisestatud kohad salvestatakse ajaloo listi. Ajaloo listis on võimalik valida lemmikud marsruudid mis alati kuvatakse listis esimesena.
+
+Üleval paremal on menüü kus on kaks valikut: sätted ja informatsioon. Vajutades kummagi peale viiakse kasutaja järgmisele vastavale leheküljele.
+
+Informatsiooni leheküljel on kirjas informatsioon Elroni kohta.
+
+Sätete leheküljel saab muuta äppi teemat valge ja tumeda vahel.
+
+Töövahendid: Android Studio
