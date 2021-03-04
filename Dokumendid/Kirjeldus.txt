@@ -1,9 +1,9 @@
-Äppi peamisesse lehekülge saab kirjutada lähtekoha, sihtkoha ja küüpäeva. Vajutades "Otsi" peale viiakse kasutaja Elroni rongiaegade peale. Sisestatud kohad salvestatakse ajaloo listi. Ajaloo listis on võimalik valida lemmikud marsruudid mis alati kuvatakse listis esimesena.
+Probleem: Elroni rongiaegade vaatamine mobiiltelefonis
 
-Üleval paremal on menüü kus on kaks valikut: sätted ja informatsioon. Vajutades kummagi peale viiakse kasutaja järgmisele vastavale leheküljele.
+Keda puudutab: Elroni rongide reisijaid
 
-Informatsiooni leheküljel on kirjas informatsioon Elroni kohta.
+Kuidas puudutab: Reisijad peavad alati minema Elroni kodulehele või rongijaama et näha rongiaegu. Koduleht ei jäta meelde reisijate marsruutide ajalugu ja need tuleb iga uuesti käsitsi sisestada.
 
-Sätete leheküljel saab muuta äppi teemat valge ja tumeda vahel.
+Lahendus: Tuleb luua äpp kuhu on võimalik sisestada reisi marsruudi ja kuupäeva, seejärel näidatakse rongiaegu. Reisi marsruut jäetakse meelde listi. Listis on võimalik sättida lemmikud marsruudid mis kuvatakse alati esimesena.
 
 Töövahendid: Android Studio
