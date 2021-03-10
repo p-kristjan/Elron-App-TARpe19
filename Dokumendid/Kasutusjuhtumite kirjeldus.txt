@@ -1,0 +1,16 @@
+>KIRJELDUS
+
+Kastutaja avab äppi. Süsteem esitab kasutajale peamise lehekülje. Peamisel leheküljel on võimalik sisestada marsruudi andmed ja vajutada "Otsi" või “Vaheta” nupu peale, näha ja tähtsustada eelnevalt valitud marsruute ja avada menüü kus on kaks valikut: sätted ja info - kumbki viib oma vastavale leheküljele. Kui marsruudi andmed on sisestatud ja kasutaja vajutab “Vaheta” nupu peale, lähtekoha ja sihtpunkti asukohad teksti väljades vahetatakse omavahel ja kui kasutaja vajutab “Otsi” nupu peale, viiakse kasutaja … (TODO)
+
+
+>AJEND
+
+Kasutaja avab äpi.
+
+
+> ACTORID
+
+Kasutaja.
+
+
+… (TODO)
