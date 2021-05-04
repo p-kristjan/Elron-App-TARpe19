@@ -1,5 +1,27 @@
 1. Kasutajana tahan muuta rakenduse teemat et oleks pimedas mugavam vaadata.
+
+Vastuvõtu tingimused:
+- Sätetes nupu vajutusel muutub äppi teema kas tumedaks heleda tekstiga või heledaks tumeda tekstiga.
+
 2. Kasutajana tahan rongi marsruutide ajalugu et oleks võimalik kiiremini rongiaegu vaadata.
+
+Vastuvõtu tingimused:
+- Pealehel on marsruutide loetelu mille peal saab vajutada individuaalsele marsruudile et selle marsruudi rongiaegu vaadata.
+- Marsruudid on järjestatud uuemast vanemani.
+- Marsruudid tekivad loetellu siis kui kasutaja otsib mingisugust marsruuti.
+
 3. Kasutajana tahan lugeda kuidas rongis pileti ostmine toimub et valmistada ette rongisõiduks.
+
+Vastutvõtu tingimused:
+- Pealehel peaks rippmenüüs olema valik mis viib leheküljele kus seletatakse kuidas toimub rongis pileti ostmine.
+
 4. Kasutajana tahan seletust kuidas rakendus täpsemalt töötab kui ma ei saa millegist aru et saaksin seda effektiivsemalt kasutada.
+
+Vastuvõtu tingimused:
+- Pealehel peaks rippmenüüs olema valik mis viib leheküljele kus seletatakse kuidas rakendust kasutada.
+
 5. Kasutajana tahan lisada eelnevaid marsruute lemmikute hulka et kiiremini oma lemmikute marsruutide rongiaegu leida.
+
+Vastuvõtu tingimused:
+- Kui pealehel on eelnevalt otsitud marsruudid kuvatud listis, peaks nende kõrval olema nupp mis laseb marsruudi teha lemmikuks.
+- Lemmikud marsruudid peaks alati olema kuvatud listis ülaosas ja olema visuaalselt eristatav tavalistest marsruutidest.
