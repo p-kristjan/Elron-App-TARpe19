@@ -1,0 +1,5 @@
+1. Kasutajana tahan muuta rakenduse teemat et oleks pimedas mugavam vaadata.
+2. Kasutajana tahan rongi marsruutide ajalugu et oleks võimalik kiiremini rongiaegu vaadata.
+3. Kasutajana tahan nuppu et lähtekohta ja sihtkohta omavahel vahetada et säästa aega.
+4. Kasutajana tahan rakenduse informatsiooni lehekülge et saada targemaks.
+5. Kasutajana tahan lisada eelnevaid marsruute lemmikute hulka et kiiremini oma lemmikute marsruutide rongiaegu leida.
