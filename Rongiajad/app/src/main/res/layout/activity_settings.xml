@@ -5,22 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button3"
+        android:layout_width="64dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/abc_vector_test"
+        android:backgroundTint="#FF5722"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="163dp"
-        android:layout_height="100dp"
-        app:srcCompat="@drawable/elronlogo"
-        tools:layout_editor_absoluteX="246dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:layout_width="155dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/elronlogo" />
 
     <TextView
         android:id="@+id/dark_mode"
         style="@style/Widget.AppCompat.TextView.SpinnerItem"
-        android:layout_width="231dp"
-        android:layout_height="30dp"
+        android:layout_width="244dp"
+        android:layout_height="32dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="36dp"
-        android:text="Enable dark mode"
+        android:text="Aktiveeri tume teema"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/switch_onoff"
         app:layout_constraintTop_toBottomOf="@+id/text_settings" />
@@ -41,7 +54,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="136dp"
-        android:text="Settings"
+        android:text="Sätted"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="24sp"
@@ -58,7 +71,7 @@
         android:layout_marginEnd="145dp"
         android:layout_marginBottom="60dp"
         android:background="@drawable/custom_button"
-        android:text="apply"
+        android:text="Kinnita"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

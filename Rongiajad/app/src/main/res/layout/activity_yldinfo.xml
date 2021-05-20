@@ -5,11 +5,59 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/text_yldinfo"
+        style="@android:style/Widget.DeviceDefault.Light.TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text="Üldinfo"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="166dp"
         android:layout_height="75dp"
-        app:srcCompat="@drawable/elronlogo"
-        tools:layout_editor_absoluteX="244dp"
-        tools:layout_editor_absoluteY="2dp" />
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/elronlogo" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Ettevõttes on mitmetasandiline kontrollisüsteem. Lisaks seaduses ettenähtud majandusaasta aruande kontrollimisele ja kinnitamisele on meil ka sisekontrollisüsteem. Vastavalt audiitortegevuse seadusele on moodustatud auditikomitee, mis tegutseb nõukogu poolt kinnitatud auditikomitee töökorra alusel. Auditikomitee liikmeteks on ettevõtte nõukogu otsusega nimetatud Kalle Viks (auditikomitee esimees), Marko Roots ja Piret Kustasson. Auditikomitee esimehe tasu on 187,50 EUR koosoleku toimumise kuu eest ja liikmetel 250 EUR koosoleku toimumise kuu eest.
+
+Auditikomitee ettepanekul kinnitab nõukogu igaks aastaks siseauditi kava. Siseauditite tulemusest ja parendusettepanekutest raporteeritakse auditikomiteele."
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_yldinfo"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="64dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/abc_vector_test"
+        android:backgroundTint="#FF5722"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

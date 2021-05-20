@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/backgroundColor"
+    android:layout_height="match_parent">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="259dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_box"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <CalendarView
+        android:id="@+id/calendarView3"
+        android:layout_width="258dp"
+        android:layout_height="308dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_box"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView2" />
 
     <SearchView
         android:id="@+id/searchView2"
@@ -12,58 +34,39 @@
         android:layout_height="54dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/custom_box"
+        android:backgroundTint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchView">
 
         <SearchView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/custom_box"
-            tools:layout_editor_absoluteX="76dp"
-            tools:layout_editor_absoluteY="163dp" />
+            android:background="@drawable/custom_box" />
     </SearchView>
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinner3"
         android:layout_width="35dp"
         android:layout_height="36dp"
         android:layout_marginTop="36dp"
         android:background="@drawable/bars_solid"
         android:backgroundTint="#FF5722"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintHorizontal_bias="0.893"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView4"
         android:layout_width="166dp"
         android:layout_height="75dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toStartOf="@+id/spinner"
         app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/elronlogo" />
-
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="259dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="45dp"
-        android:background="@drawable/custom_box"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="258dp"
-        android:layout_height="308dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/custom_box"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
