@@ -5,17 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button3"
-        android:layout_width="64dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/abc_vector_test"
-        android:backgroundTint="#FF5722"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="155dp"
@@ -31,8 +20,8 @@
         style="@style/Widget.AppCompat.TextView.SpinnerItem"
         android:layout_width="244dp"
         android:layout_height="32dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="28dp"
         android:text="Aktiveeri tume teema"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/switch_onoff"
@@ -43,7 +32,7 @@
         android:layout_width="54dp"
         android:layout_height="49dp"
         android:layout_marginEnd="52dp"
-        android:layout_marginBottom="332dp"
+        android:layout_marginBottom="372dp"
         android:buttonTint="#DF4D1F"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -53,7 +42,7 @@
         style="@android:style/Widget.DeviceDefault.Light.TextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="116dp"
         android:text="Sätted"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -64,7 +53,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_apply"
+        android:id="@+id/btn_apply_settings"
         android:layout_width="131dp"
         android:layout_height="50dp"
         android:layout_marginStart="145dp"

@@ -33,10 +33,10 @@
     <TextView
         android:id="@+id/textView"
         style="@style/Widget.AppCompat.TextView.SpinnerItem"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="348dp"
+        android:layout_height="354dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="23dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
         android:text="Ettevõttes on mitmetasandiline kontrollisüsteem. Lisaks seaduses ettenähtud majandusaasta aruande kontrollimisele ja kinnitamisele on meil ka sisekontrollisüsteem. Vastavalt audiitortegevuse seadusele on moodustatud auditikomitee, mis tegutseb nõukogu poolt kinnitatud auditikomitee töökorra alusel. Auditikomitee liikmeteks on ettevõtte nõukogu otsusega nimetatud Kalle Viks (auditikomitee esimees), Marko Roots ja Piret Kustasson. Auditikomitee esimehe tasu on 187,50 EUR koosoleku toimumise kuu eest ja liikmetel 250 EUR koosoleku toimumise kuu eest.
@@ -45,10 +45,10 @@ Auditikomitee ettepanekul kinnitab nõukogu igaks aastaks siseauditi kava. Sisea
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_yldinfo"
-        app:layout_constraintVertical_bias="0.024" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"

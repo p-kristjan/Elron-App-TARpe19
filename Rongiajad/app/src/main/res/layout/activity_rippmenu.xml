@@ -7,38 +7,35 @@
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_uldinfo2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/bckButton"
+        android:layout_width="64dp"
+        android:layout_height="53dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/custom_box"
-        android:hint=" Sätted"
-        android:textAlignment="textStart"
-        android:textColorHint="#727373"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/abc_vector_test"
+        android:backgroundTint="#FF5722"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_uldinfo" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="166dp"
         android:layout_height="75dp"
-        app:srcCompat="@drawable/elronlogo"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toEndOf="@+id/bckButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/elronlogo" />
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="35dp"
         android:layout_height="36dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/bars_solid"
         android:backgroundTint="#FF5722"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintHorizontal_bias="0.914"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,14 +43,31 @@
         android:id="@+id/button_uldinfo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/custom_box"
-        android:hint=" Üldinfo"
+        android:hint="   Üldinfo"
         android:textAlignment="textStart"
         android:textColorHint="#727373"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_uldinfo2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_box"
+        android:hint="   Sätted"
+        android:textAlignment="textStart"
+        android:textColorHint="#727373"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_uldinfo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
