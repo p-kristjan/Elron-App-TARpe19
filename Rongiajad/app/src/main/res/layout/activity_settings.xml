@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RippmenuActivity">
+    tools:context=".SettingsActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/elronLogoSettings"
         android:layout_width="155dp"
         android:layout_height="66dp"
         android:layout_marginTop="16dp"
@@ -17,7 +17,7 @@
         app:srcCompat="@drawable/elronlogo" />
 
     <TextView
-        android:id="@+id/dark_mode"
+        android:id="@+id/txt_dark_mode_settings"
         style="@style/Widget.AppCompat.TextView.SpinnerItem"
         android:layout_width="244dp"
         android:layout_height="32dp"
@@ -25,11 +25,11 @@
         android:layout_marginEnd="28dp"
         android:text="Aktiveeri tume teema"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/switch_onoff"
+        app:layout_constraintEnd_toStartOf="@+id/switch_onoff_settings"
         app:layout_constraintTop_toBottomOf="@+id/text_settings" />
 
     <Switch
-        android:id="@+id/switch_onoff"
+        android:id="@+id/switch_onoff_settings"
         android:layout_width="54dp"
         android:layout_height="49dp"
         android:layout_marginEnd="52dp"
@@ -65,4 +65,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="64dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/abc_vector_test"
+        android:backgroundTint="#FF5722"
+        android:onClick="onBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

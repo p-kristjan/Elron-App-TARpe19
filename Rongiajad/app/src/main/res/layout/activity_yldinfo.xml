@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RippmenuActivity">
+    tools:context=".YldinfoActivity">
 
     <TextView
         android:id="@+id/text_yldinfo"
@@ -59,6 +59,7 @@ Auditikomitee ettepanekul kinnitab nõukogu igaks aastaks siseauditi kava. Sisea
         android:layout_marginTop="20dp"
         android:background="@drawable/abc_vector_test"
         android:backgroundTint="#FF5722"
+        android:onClick="onBack"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,4 +27,8 @@ public class RippmenuActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), SettingsActivity.class);
         startActivity(intent);
     }
+
+    public void onBack(View v) {
+        super.onBackPressed(); // or super.finish();
+    }
 }
