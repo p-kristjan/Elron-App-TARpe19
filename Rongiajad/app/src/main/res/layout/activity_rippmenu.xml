@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".RippmenuActivity">
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bckButton"
@@ -14,6 +14,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/abc_vector_test"
         android:backgroundTint="#FF5722"
+        android:onClick="onBack"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -50,6 +51,7 @@
         android:hint="   Üldinfo"
         android:textAlignment="textStart"
         android:textColorHint="#727373"
+        android:onClick="onYldinfo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,6 +68,7 @@
         android:hint="   Sätted"
         android:textAlignment="textStart"
         android:textColorHint="#727373"
+        android:onClick="onSettings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
