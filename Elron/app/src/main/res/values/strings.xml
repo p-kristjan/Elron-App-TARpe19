@@ -8,4 +8,6 @@
     <string name="date_filler">DD.MM.YYYY</string>
     <string name="swap_button">Swap Button</string>
     <string name="history">Ajalugu</string>
+    <string name="activity_info_name">Informatsioon</string>
+    <string name="activity_settings_name">Sätted</string>
 </resources>
