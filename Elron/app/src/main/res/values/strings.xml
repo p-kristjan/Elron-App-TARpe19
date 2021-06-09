@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Elron</string>
+    <string name="rongiajad">Rongiajad</string>
+    <string name="elron_logo">Elron Logo</string>
+    <string name="loc">Lähtekoht</string>
+    <string name="dest">Sihtpunkt</string>
+    <string name="search_btn">Otsi</string>
+    <string name="date_filler">DD.MM.YYYY</string>
+    <string name="swap_button">Swap Button</string>
+    <string name="history">Ajalugu</string>
 </resources>
