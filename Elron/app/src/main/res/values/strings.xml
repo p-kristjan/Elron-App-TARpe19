@@ -12,4 +12,17 @@
     <string name="activity_settings_name">Sätted</string>
     <string name="apply">Salvesta</string>
     <string name="switch_theme">Tume teema</string>
+    <string name="dot">·</string>
+    <string name="txt_info_title">Elron</string>
+    <string-array name="txt_info_array">
+        <item>Eesti Liinirongid AS (varasem Elektriraudtee AS) on Eesti reisirongide operaatorfirma, mis tegutseb kaubamärgi ELRON all.[1] Firma ainuomanik on Eesti riik.</item>
+        <item>Aastal 2016 tehti Elroni rongidega 6,8 miljonit reisi, aastane kasv oli 4%.</item>
+        <item>2018. aasta esimeses pooles sõideti rongiga 3 861 000 korda, kokku tehti üle 280 000 reisi rohkem kui aasta tagasi. Kasv oli mullusega võrreldes 8%.</item>
+        <item>Elroni rongipark koosneb 38 Stadler FLIRTi koosseisust, millest 18 on elektrirongid ja 20 diiselrongid.</item>
+        <item>Oktoobris 2020 teatas Elron, et ostab Tšehhi ettevõttelt Škoda Vagonka A.S. kuus reisirongi optsiooniga tellida hiljem veel kümme rongi. Rongid saabuvad Eestisse 2024. aasta teises pooles ning need hakkavad peamiselt teenindama Tallinn-Tartu rongiliini.</item>
+        <item>Elektriraudtee Aktsiaselts tekkis 23. detsembril 1998 AS Eesti Raudtee jagunemisel, iseseisvat majandustegevust alustati 1. jaanuarist 1999. Esialgu kuulusid kõik aktsiad aktsiaseltsile Eesti Raudtee, 15. novembril 2000 läksid need üle Eesti Vabariigile.</item>
+        <item>Oktoobris 2013 vahetas Elektriraudtee oma nime Eesti Liinirongide vastu, sest 2014. aastast pidi ettevõte hakkama teenindama reisirongiliine üle kogu Eesti, nii elektri- kui ka diiselrongidega, mistõttu poleks vana nimi sobinud. 1. jaanuaril 2014 võttiski Elron üle seni Edelaraudtee teenindada olnud liinid.</item>
+        <item>Elron teenindab reisijaid Stadler FLIRT rongidega 17 liinil neljas suunas. Läänesuunas teenindatakse liine Tallinnast Pääskülla, Keilasse, Paldiskisse, Kloogaranda, Riisiperre ja Turbasse, edelasuunas Viljandisse, Türile ja Raplasse. Idasuunas sõidavad rongid Tartusse (nii tava kui ka ekspressrongid), Narvasse, Rakverre ja Aegviitu. Kagusuunas teenindatakse liine Tartu–Põlva–Koidula (suviti pikendatakse Piusani) ja Tartu–Elva–Valga. Käigus on ka Jõgeva–Tartu rongid. Varem on toiminud ka liinid Tallinn–Lelle ja Lelle–Pärnu.</item>
+        <item>Oktoobris 2020 teatas Elron, et ostab Tšehhi ettevõttelt Škoda Vagonka A.S. kuus reisirongi optsiooniga tellida hiljem veel kümme rongi. Rongid saabuvad Eestisse 2024. aasta teises pooles ning need hakkavad peamiselt teenindama Tallinn-Tartu rongiliini.</item>
+    </string-array>
 </resources>
