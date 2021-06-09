@@ -10,4 +10,6 @@
     <string name="history">Ajalugu</string>
     <string name="activity_info_name">Informatsioon</string>
     <string name="activity_settings_name">Sätted</string>
+    <string name="apply">Salvesta</string>
+    <string name="switch_theme">Tume teema</string>
 </resources>
