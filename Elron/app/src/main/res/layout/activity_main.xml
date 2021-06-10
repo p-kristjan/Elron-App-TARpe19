@@ -70,6 +70,7 @@
         android:layout_marginStart="8dp"
         android:text="@string/search_btn"
         android:textSize="22sp"
+        android:onClick="onSearch"
         app:cornerRadius="50dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnCalendar"
         app:layout_constraintEnd_toEndOf="@+id/etDestination"

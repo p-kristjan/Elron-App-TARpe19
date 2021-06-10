@@ -6,7 +6,9 @@ import androidx.fragment.app.DialogFragment;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -15,13 +17,18 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.Toast;
+
+import org.apache.commons.text.WordUtils;
 
 import java.text.DateFormat;
 import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
     AutoCompleteTextView etLocation, etDestination;
+    String txtLocation, txtDestination;
     Button btnCalendar;
     int year, month, day;
 
@@ -79,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         day = _day;
     }
 
-    // Inflating the menu
+    // Menüü inflatimine
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -87,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         return true;
     }
 
-    // Listener for menu item options
+    // Listener menüü valikute jaoks
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
@@ -99,5 +106,21 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    // Kui otsimise nuppu vajutatakse
+    public void onSearch(View view) {
+        txtLocation = WordUtils.capitalizeFully(etLocation.getText().toString());
+        txtDestination = WordUtils.capitalizeFully(etDestination.getText().toString());
+        // Kontrollib kas sisestatud jaamad on korrektsed
+        if(Arrays.asList(TRAIN_STOPS).contains(txtLocation) || !Arrays.asList(TRAIN_STOPS).contains(txtDestination)){
+            // Genereerib url-i ja läheb sellele url-ile
+            Uri uri = Uri.parse(String.format(getString(R.string.elron_url), txtLocation, txtDestination, year, month, day));
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+        } else {
+            // Kui mingi rongijaam ei sobi
+            Toast.makeText(this, "Kontrolli kas peatuse nimed on õigesti sisestatud ja proovi uuesti.", Toast.LENGTH_LONG).show();
+        }
     }
 }

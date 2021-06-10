@@ -14,6 +14,8 @@
     <string name="switch_theme">Tume teema</string>
     <string name="dot">·</string>
     <string name="txt_info_title">Elron</string>
+    <string name="url_format">https://elron.pilet.ee/et/otsing/%s/%s/%d-%02d-%02d</string>
+    <string name="elron_url">https://elron.pilet.ee/et/otsing/%s/%s/%d-%02d-%02d</string>
     <string-array name="txt_info_array">
         <item>Eesti Liinirongid AS (varasem Elektriraudtee AS) on Eesti reisirongide operaatorfirma, mis tegutseb kaubamärgi ELRON all.[1] Firma ainuomanik on Eesti riik.</item>
         <item>Aastal 2016 tehti Elroni rongidega 6,8 miljonit reisi, aastane kasv oli 4%.</item>
