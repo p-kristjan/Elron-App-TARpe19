@@ -21,6 +21,8 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.Toast;
 
+import com.psennoi.elron.Database.DatabaseAdapter;
+
 import org.apache.commons.text.WordUtils;
 
 import java.text.DateFormat;
@@ -31,6 +33,7 @@ import java.util.Calendar;
 public class MainActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
     AutoCompleteTextView etLocation, etDestination;
     String txtLocation, txtDestination;
+    private DatabaseAdapter helper;
     Button btnCalendar;
     public static final String THEME_KEY = "darkMode";
     int year, month, day;
@@ -44,6 +47,11 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         SharedPreferences mPreferences = getSharedPreferences(SettingsActivity.sharedPrefFile, MODE_PRIVATE);
+
+        // Helper for working with the database
+        helper = new DatabaseAdapter(this);
+        // If database does not exist, create it.
+        if(!helper.tableExists()) helper.insertData();
 
         // Saab praeguse kuupäeva ja paneb selle nupu tekstiks
         LocalDate currentDate = LocalDate.now();
@@ -121,6 +129,9 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         txtDestination = WordUtils.capitalizeFully(etDestination.getText().toString());
         // Kontrollib kas sisestatud jaamad on korrektsed
         if(Arrays.asList(TRAIN_STOPS).contains(txtLocation) || !Arrays.asList(TRAIN_STOPS).contains(txtDestination)){
+            // Lisab andmed andmebaasi
+            helper.addRoute(txtLocation, txtDestination);
+
             // Genereerib url-i ja läheb sellele url-ile
             Uri uri = Uri.parse(String.format(getString(R.string.elron_url), txtLocation, txtDestination, year, month, day));
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
