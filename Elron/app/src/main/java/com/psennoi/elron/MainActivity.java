@@ -38,8 +38,16 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
     public static final String THEME_KEY = "darkMode";
     int year, month, day;
 
-    private static final String[] TRAIN_STOPS = new String[]{
-            "Tallinn", "Tartu", "Viljandi", "Rakvere", "Narva"
+    private static final String[]
+            TRAIN_STOPS = new String[]{
+            "Tallinn", "Narva", "Kitseküla", "Ülemiste", "Vesse", "Lagendi", "Kulli", "Aruküla", "Raasiku", "Parila", "Kehra", "Lahinguvälja", "Mustjõe", "Aegviidu", "Nelijärve",
+            "Jäneda", "Lehtse", "Tapa", "Kadrina", "Rakvere", "Kabala", "Sonda","Kiviõli", "Püssi", "Kohtla-Nõmme", "Jõhvi", "Oru", "Vaivara", "Tamsalu","Kiltsi", "Rakke", "Vägeva",
+            "Pedja", "Jõgeva", "Kaarepere", "Tabivere","Kärkna", "Kirsi", "Ülenurme", "Uhti", "Reola", "Vana-Kuuste", "Rebase", "Vastse-Kuuste", "Valgemetsa", "Kiidjärve","Taevaskoja",
+            "Põlva", "Holvandi", "Ruusa", "Veriora", "Ilumetsa", "Orava", "Koidula", "Piusa", "Aardla", "Rapka", "Nõo", "Tõravere", "Peedu", "Elva", "Paluvera", "Puka", "Mägiste", "Keeni",
+            "Sangaste", "Valga", "Tallinn-Väike", "Liiva", "Valdeku", "Männiku", "Saku", "Kasemetsa", "Kiisa", "Roobuka", "Vilivere", "Kohila", "Lohu", "Hagudi", "Rapla", "Keava", "Lelle",
+            "Käru", "Türi", "Taikse", "Kärevere", "Ollepa", "Võhma", "Olustvere", "Sürgavere", "Viljandi", "Lilleküla", "Tondi", "Järve", "Rahumäe", "Nõmme", "Hiiu", "Kivimäe", "Pääsküla",
+            "Laagri", "Urda", "Padula", "Saue", "Valingu", "Keila", "Kulna", "Vasalemma", "Kibuna", "Laitse", "Jaanika", "Riisipere", "Turba", "Niitvälja", "Klooga", "Klooga-Aedlinn",
+            "Põllküla", "Laoküla", "Paldiski", "Kloogaranna"
     };
 
     @Override
