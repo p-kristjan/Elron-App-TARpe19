@@ -2,10 +2,12 @@ package com.psennoi.elron;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.DialogFragment;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
     AutoCompleteTextView etLocation, etDestination;
     String txtLocation, txtDestination;
     Button btnCalendar;
+    public static final String THEME_KEY = "darkMode";
     int year, month, day;
 
     private static final String[] TRAIN_STOPS = new String[]{
@@ -40,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        SharedPreferences mPreferences = getSharedPreferences(SettingsActivity.sharedPrefFile, MODE_PRIVATE);
 
         // Saab praeguse kuupäeva ja paneb selle nupu tekstiks
         LocalDate currentDate = LocalDate.now();
@@ -48,6 +52,9 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         day = currentDate.getDayOfMonth();
         btnCalendar = findViewById(R.id.btnCalendar);
         btnCalendar.setText(String.format("%02d.%02d.%d", day, month, year));
+
+        // Restore Dark or Light mode through shared preferences
+        if(mPreferences.getBoolean(THEME_KEY, false)) AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
 
         etLocation = findViewById(R.id.etLocation);
         etDestination = findViewById(R.id.etDestination);

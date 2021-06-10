@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="orange_200">#FFEB3B</color>
+    <color name="orange_200">#f67728</color>
     <color name="orange_500">#f67728</color>
     <color name="orange_700">#dd6b24</color>
     <color name="teal_200">#FF03DAC5</color>
